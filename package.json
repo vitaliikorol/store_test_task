@@ -1,4 +1,5 @@
 {
+  "homepage": "http://vitaliikorol.github.io/store_test_task",
   "name": "store_test_task",
   "version": "0.1.0",
   "private": true,
@@ -6,15 +7,33 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "@types/classnames": "^2.2.10",
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.9",
+    "@types/node-sass": "^4.11.1",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.5",
+    "classnames": "^2.2.6",
+    "gh-pages": "^3.0.0",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "typescript": "^3.9.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint-js": "eslint --ext .ts,.tsx ./src/ --fix",
+    "lint-css": "stylelint src/**/*.css src/**/*.scss --fix",
+    "lint": "npm run lint-js && npm run lint-css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "eslintConfig": {
     "extends": "react-app"
