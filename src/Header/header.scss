@@ -1,0 +1,12 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 21px 0;
+  &__logo {
+    width: 106px;
+    height: 39px;
+    position: relative;
+    left: 51px; //value taken from cart width to remove misaligning from center and not to use absolute positioning fot cart component
+  }
+}

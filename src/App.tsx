@@ -1,10 +1,14 @@
 import React from 'react'
-import './App.css';
+import './App.scss';
+import {Header} from "./Header/header";
 
-function App() {
+const App = () => {
   return (
-      <img src="images/jacket_shirt/jacket_shirt_01.jpg" alt="jacket"/>
-  );
+    <Header />
+  )
 }
 
 export default App;
+
+//---todo --- images tested path
+// <img src="images/jacket_shirt/jacket_shirt_01.jpg" alt="jacket"/>
