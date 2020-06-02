@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <p>1</p>
+    <img src="/api/images/jacket_shirt/jacket_shirt_01.jpg" alt="jacket"/>
   );
 }
 
