@@ -1,0 +1,159 @@
+[
+  {
+    "name": "Рубашка на пуговицах",
+    "maker": "YOHJI YAMAMOTO",
+    "price": 320,
+    "description": "Рубашка на пуговицах от Yohji Yamamoto (Йоджи Ямамото). Классический воротник, застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и манжеты на пуговицах.",
+    "description_additional": "Рост модели 1,88 м, надет размер 2\n\nОбраз модели дополнен: Yohji Yamamoto широкие укороченные брюки, Converse кроссовки 'One Star'.",
+    "color": "Черный",
+    "composition": "Шерсть 100%",
+    "care": "Сухая чистка",
+    "article_no": "ННВ73100",
+    "sizes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "product_images": [
+      "images/shirt_with_button/shirt_with_button_01.jpg",
+      "images/shirt_with_button/shirt_with_button_02.jpg",
+      "images/shirt_with_button/shirt_with_button_03.jpg",
+      "images/shirt_with_button/shirt_with_button_04.jpg",
+      "images/shirt_with_button/shirt_with_button_05.jpg",
+      "images/shirt_with_button/shirt_with_button_06.jpg"
+    ],
+    "left_in_stock": 20
+  },
+  {
+    "name": "Рубашка на с принтом",
+    "maker": "YOHJI YAMAMOTO",
+    "price": 170,
+    "description": "Рубашка с принтом от Yohji Yamamoto (Йоджи Ямамото). Открытый ворот, длинные рукава, застежка на пуговицах спереди и закругленный подол.",
+    "description_additional": "Рост модели: 1,89 м . Размер на модели: 3 (JP)\nНа модели: Maison Margiela кроссовки 'Artisanal'.",
+    "color": "Черный",
+    "composition": "Вискоза 100%",
+    "care": "Сухая чистка",
+    "article_no": "HHB28246",
+    "sizes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "product_images": [
+      "images/shirt_with_print/shirt_with_print_01.jpg",
+      "images/shirt_with_print/shirt_with_print_02.jpg",
+      "images/shirt_with_print/shirt_with_print_03.jpg",
+      "images/shirt_with_print/shirt_with_print_04.jpg",
+      "images/shirt_with_print/shirt_with_print_05.jpg"
+    ],
+    "left_in_stock": 11
+  },
+  {
+    "name": "Кроссовки «Kaiwa» Y3 x Adidas",
+    "maker": "Y-3",
+    "price": 240,
+    "description": "Кроссовки Kaiwa от Y-3. Закругленный носок, плоская подошва, застежка на шнуровке, заплатка с логотипом на язычке и контрастные панели.",
+    "description_additional": "",
+    "color": "",
+    "composition": "Подошва: Резина 100%\nПодкладка: Кожа 100%,Полиэстер 100%\nНаружный Материал: Кожа 100%,Полиэстер 100%",
+    "care": "",
+    "article_no": "F97415",
+    "sizes": [
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "product_images": [
+      "images/Y3_sneakers/Y3_sneakers_01.jpg",
+      "images/Y3_sneakers/Y3_sneakers_02.jpg",
+      "images/Y3_sneakers/Y3_sneakers_03.jpg",
+      "images/Y3_sneakers/Y3_sneakers_04.jpg"
+    ],
+    "left_in_stock": 134
+  },
+  {
+    "name": "Куртка-рубашка с карманами на молнии",
+    "maker": "YOHJI YAMAMOTO",
+    "price": 1240,
+    "description": "Куртка-рубашка с карманами на молнии от Yohji Yamamoto (Йоджи Ямамото). Косой воротник, планка на пуговицах спереди, длинные рукава, передний карман с клапаном, разрезы по бокам и асимметричный подол.",
+    "description_additional": "На модели: Maria Black кольцо 'Offset V',Rick Owens длинная футболка оверсайз,Saint Laurent сумка-тоут ,Tateossian плетеный браслет,Converse кроссовки 'One Star',Yohji Yamamoto брюки с низким шаговым швом.",
+    "color": "Черный",
+    "composition": "Хлопок 100%",
+    "care": "Сухая чистка",
+    "article_no": "HHT16080",
+    "sizes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "product_images": [
+      "images/jacket_shirt/jacket_shirt_01.jpg",
+      "images/jacket_shirt/jacket_shirt_02.jpg",
+      "images/jacket_shirt/jacket_shirt_03.jpg",
+      "images/jacket_shirt/jacket_shirt_04.jpg",
+      "images/jacket_shirt/jacket_shirt_05.jpg"
+    ],
+    "left_in_stock": 11
+  },
+  {
+    "name": "Кроссовки с пряжками",
+    "maker": "YOHJI YAMAMOTO",
+    "price": 390,
+    "description": "Кроссовки с пряжками от Yohji Yamamoto (Йоджи Ямамото). Закругленный носок, застежка на пряжке, застежка на молнии сзади и плоская резиновая подошва.",
+    "description_additional": "",
+    "color": "Черный",
+    "composition": "Наружный Материал: Кожа Теленка 100%,Хлопок 100%\nПодкладка: Полиэстер 100%\nПодошва: Резина 100%",
+    "care": "",
+    "article_no": "HHE41861",
+    "sizes": [
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "product_images": [
+      "images/sneakers_with_fastener/sneakers_with_fastener_01.jpg",
+      "images/sneakers_with_fastener/sneakers_with_fastener_02.jpg",
+      "images/sneakers_with_fastener/sneakers_with_fastener_03.jpg",
+      "images/sneakers_with_fastener/sneakers_with_fastener_04.jpg"
+    ],
+    "left_in_stock": 11
+  },
+  {
+    "name": "Укороченные зауженные брюки",
+    "maker": "JIL SANDER",
+    "price": 647,
+    "description": "Укороченные зауженные брюки от Jil Sander (Жиль Сандер). Завышенная посадка, эластичный пояс, боковые карманы и задние карманы.",
+    "description_additional": "Рост модели: 1,86 м . Размер на модели: 48 (IT/FR)\nНа модели: Maison Margiela сумка-тоут на молнии,Maison Margiela пиджак без лацканов,Jil Sander футболка с круглым вырезом,Maison Margiela кольцо с цифрами,Alexander McQueen высокие кеды Tread Slick.",
+    "color": "Черный",
+    "composition": "Подкладка: Хлопок 100%\nНаружный Материал: Полиэстер 100%",
+    "care": "Сухая чистка",
+    "article_no": "JSMQ311331MQ441000",
+    "sizes": [
+      44,
+      46,
+      48,
+      50,
+      52
+    ],
+    "product_images": [
+      "images/trousers_slim/trousers_slim_01.jpg",
+      "images/trousers_slim/trousers_slim_02.jpg",
+      "images/trousers_slim/trousers_slim_03.jpg",
+      "images/trousers_slim/trousers_slim_04.jpg",
+      "images/trousers_slim/trousers_slim_05.jpg",
+      "images/trousers_slim/trousers_slim_06.jpg"
+    ],
+    "left_in_stock": 7
+  }
+]
