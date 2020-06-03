@@ -1,4 +1,5 @@
 import React, {FC, useState} from "react";
+import {NavLink} from 'react-router-dom'
 import './productCard.scss'
 import {ClothItem} from "../Additional/Interfaces";
 import cn from 'classnames';
@@ -55,7 +56,9 @@ export const ProductCard: FC<Params> = ({item}) => {
       onMouseEnter={defineMouseEnter}
       onMouseLeave={defineMouseLeave}
     >
-      <img src={activeImage} alt="" className="ProductCard__image"/>
+      <NavLink to={`/${item.article_no}`}>
+        <img src={activeImage} alt={activeImage} className="ProductCard__image"/>
+      </NavLink>
       <div className="ProductCard__wrapper">
         <div
           className="ProductCard__slider ProdSlider"

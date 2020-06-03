@@ -4,9 +4,9 @@
   width: 280px;
   height: 506px;
   overflow: hidden;
-  margin: 0 40px 30px;
+  margin: 0 0 30px;
   &:hover {
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.0697115);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.0697115);
   }
   &__wrapper {
     position: relative;

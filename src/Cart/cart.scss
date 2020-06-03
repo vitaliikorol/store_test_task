@@ -5,12 +5,12 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  position: relative;
+  left: calc(100% - 176px); //125px for header margin & 51px for button width
   &:focus {
     outline: none;
   }
-  &:active {
-    box-shadow: 0 0 2px 1px rgba(0,0,0,0.75);
-  }
+
   &__logo {
     width: 23px;
     height: 21px;
@@ -33,13 +33,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    right: calc((100vw - 1440px) / 2);
-    top: -100vh;
     background-color: #2B2B2B;
     width: 340px;
     height: 100vh;
-    transition: top 0.7s;
+    position: relative;
+    left: calc(100% - 465px);
+    top: calc(50vh - 41px); // 20px for center of header height & 21px for header top-margin
+    transition: top 0.6s;
     z-index: 1;
     &_total {
       width: 100%;

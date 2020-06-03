@@ -20,12 +20,12 @@ export const Cart = () => {
 
   return (
     <>
-      <button type="button" className="Cart" onClick={handleShowCart}>
+      <button type="button" className="Cart link-styling" onClick={handleShowCart}>
         <img src="https://vitaliikorol.github.io/store_test_task/images/icons/cart.png"
              alt="cart" className="Cart__logo"/>
         <span className="Cart__quantity">{cartGoods.length}</span>
       </button>
-      <aside className="Cart__body" style={{top: showCart ? "0" : "-100vh"}}>
+      <aside className="Cart__body" style={{top: showCart ? "calc(50vh - 41px)" : "calc(-50vh - 41px)"}}>
         <div className="Cart__body_close cbc">
           <button type="button" onClick={handleShowCart} className="cbc__button">
             <img

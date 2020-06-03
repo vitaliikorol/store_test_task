@@ -4,11 +4,13 @@
   &__catalog {
     display: flex;
     flex-wrap: wrap;
-    &_asd {
-      width: 250px;
-      height: 200px;
-      background-color: pink;
-      display: inline-block;
-    }
+    justify-content: space-around;
+    padding-right: 125px;
+  }
+}
+
+@media screen and (max-width: 1079px) {
+  .Main__catalog {
+    padding-right: 30px;
   }
 }
