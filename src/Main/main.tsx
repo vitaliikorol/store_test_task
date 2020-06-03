@@ -15,6 +15,7 @@ export const Main = () => {
     goodsFromServer.then(data => setClothes(data))
   }, [goodsFromServer])
 
+  console.log(clothes)
 
   return (
     <main className="Main">
