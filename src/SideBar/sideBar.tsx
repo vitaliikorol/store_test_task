@@ -74,7 +74,7 @@ export const SideBar: FC<Params> = ({
       <button className="SideBar__sort" onClick={handleViewSort}>
         Сортировать
         <img
-        src="https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/icons/up-arrow.png"
+        src="https://vitaliikorol.github.io/store_test_task/images/icons/up-arrow.png"
         alt="&uarr;"
         style={{transform: viewSort ? 'rotate(180deg)' : ''}}
         className="SideBar__sort_img"/>

@@ -64,7 +64,7 @@ export const ProductCard: FC<Params> = ({item}) => {
             onClick={handlePrevButton}
             className="ProdSlider__button">
             <img
-              src="https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/icons/up-arrow.png"
+              src="https://vitaliikorol.github.io/store_test_task/images/icons/up-arrow.png"
               alt="&larr;" className="ProdSlider__button ProdSlider__button_left"/>
           </button>
           <ul className="ProdSlider__list">
@@ -81,7 +81,7 @@ export const ProductCard: FC<Params> = ({item}) => {
             onClick={handleNextButton}
             className="ProdSlider__button">
             <img
-              src="https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/icons/up-arrow.png"
+              src="https://vitaliikorol.github.io/store_test_task/images/icons/up-arrow.png"
               alt="&larr;" className="ProdSlider__button ProdSlider__button_right"/>
           </button>
         </div>

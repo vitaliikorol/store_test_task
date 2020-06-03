@@ -21,7 +21,7 @@ export const Cart = () => {
   return (
     <>
       <button type="button" className="Cart" onClick={handleShowCart}>
-        <img src="https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/icons/cart.png"
+        <img src="https://vitaliikorol.github.io/store_test_task/images/icons/cart.png"
              alt="cart" className="Cart__logo"/>
         <span className="Cart__quantity">{cartGoods.length}</span>
       </button>
@@ -29,7 +29,7 @@ export const Cart = () => {
         <div className="Cart__body_close cbc">
           <button type="button" onClick={handleShowCart} className="cbc__button">
             <img
-              src="https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/icons/close.png"
+              src="https://vitaliikorol.github.io/store_test_task/images/icons/close.png"
               alt="close" className="cbc__button_img"/>
           </button>
         </div>
