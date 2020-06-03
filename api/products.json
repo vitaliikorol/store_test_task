@@ -18,12 +18,11 @@
       4
     ],
     "product_images": [
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/shirt_with_button/shirt_with_buttons_01.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/shirt_with_button/shirt_with_buttons_02.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/shirt_with_button/shirt_with_buttons_03.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/shirt_with_button/shirt_with_buttons_04.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/shirt_with_button/shirt_with_buttons_05.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/shirt_with_button/shirt_with_buttons_06.jpg"
+      "https://vitaliikorol.github.io/store_test_task/images/shirt_with_button/shirt_with_buttons_01.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/shirt_with_button/shirt_with_buttons_02.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/shirt_with_button/shirt_with_buttons_03.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/shirt_with_button/shirt_with_buttons_04.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/shirt_with_button/shirt_with_buttons_06.jpg"
     ],
     "left_in_stock": 20
   },
@@ -46,11 +45,11 @@
       4
     ],
     "product_images": [
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/shirt_with_print/shirt_with_print_01.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/shirt_with_print/shirt_with_print_02.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/shirt_with_print/shirt_with_print_03.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/shirt_with_print/shirt_with_print_04.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/shirt_with_print/shirt_with_print_05.jpg"
+      "https://vitaliikorol.github.io/store_test_task/images/shirt_with_print/shirt_with_print_01.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/shirt_with_print/shirt_with_print_02.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/shirt_with_print/shirt_with_print_03.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/shirt_with_print/shirt_with_print_04.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/shirt_with_print/shirt_with_print_05.jpg"
     ],
     "left_in_stock": 11
   },
@@ -76,10 +75,10 @@
       42
     ],
     "product_images": [
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/Y3_sneakers/Y3_sneakers_01.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/Y3_sneakers/Y3_sneakers_02.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/Y3_sneakers/Y3_sneakers_03.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/Y3_sneakers/Y3_sneakers_04.jpg"
+      "https://vitaliikorol.github.io/store_test_task/images/Y3_sneakers/Y3_sneakers_01.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/Y3_sneakers/Y3_sneakers_02.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/Y3_sneakers/Y3_sneakers_03.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/Y3_sneakers/Y3_sneakers_04.jpg"
     ],
     "left_in_stock": 134
   },
@@ -102,11 +101,11 @@
       4
     ],
     "product_images": [
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/jacket_shirt/jacket_shirt_01.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/jacket_shirt/jacket_shirt_02.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/jacket_shirt/jacket_shirt_03.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/jacket_shirt/jacket_shirt_04.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/jacket_shirt/jacket_shirt_05.jpg"
+      "https://vitaliikorol.github.io/store_test_task/images/jacket_shirt/jacket_shirt_01.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/jacket_shirt/jacket_shirt_02.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/jacket_shirt/jacket_shirt_03.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/jacket_shirt/jacket_shirt_04.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/jacket_shirt/jacket_shirt_05.jpg"
     ],
     "left_in_stock": 11
   },
@@ -132,10 +131,10 @@
       42
     ],
     "product_images": [
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/sneakers_with_fastener/sneakers_with_fastener_01.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/sneakers_with_fastener/sneakers_with_fastener_02.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/sneakers_with_fastener/sneakers_with_fastener_03.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/sneakers_with_fastener/sneakers_with_fastener_04.jpg"
+      "https://vitaliikorol.github.io/store_test_task/images/sneakers_with_fastener/sneakers_with_fastener_01.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/sneakers_with_fastener/sneakers_with_fastener_02.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/sneakers_with_fastener/sneakers_with_fastener_03.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/sneakers_with_fastener/sneakers_with_fastener_04.jpg"
     ],
     "left_in_stock": 11
   },
@@ -159,12 +158,11 @@
       52
     ],
     "product_images": [
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/trousers_slim/trousers_slim_01.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/trousers_slim/trousers_slim_02.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/trousers_slim/trousers_slim_03.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/trousers_slim/trousers_slim_04.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/trousers_slim/trousers_slim_05.jpg",
-      "https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/trousers_slim/trousers_slim_06.jpg"
+      "https://vitaliikorol.github.io/store_test_task/images/trousers_slim/trousers_slim_01.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/trousers_slim/trousers_slim_02.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/trousers_slim/trousers_slim_03.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/trousers_slim/trousers_slim_04.jpg",
+      "https://vitaliikorol.github.io/store_test_task/images/trousers_slim/trousers_slim_05.jpg",
     ],
     "left_in_stock": 7
   }
