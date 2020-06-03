@@ -26,7 +26,7 @@ export const Main = () => {
     />
     <div className="Main__catalog">
       {clothes.map((el: ClothItem) => (
-        <ProductCard item={el}/>
+        <ProductCard item={el} key={el.name}/>
       ))}
     </div>
 

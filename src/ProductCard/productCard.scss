@@ -2,29 +2,45 @@
   display: flex;
   flex-direction: column;
   width: 280px;
+  height: 506px;
   overflow: hidden;
+  margin: 0 40px 30px;
+  &:hover {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.0697115);
+  }
+  &__wrapper {
+    position: relative;
+    top: -61px;
+  }
   &__image {
     width: 292px;
     height: 389px;
   }
-  &__type {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 12px;
-    letter-spacing: 1px;
-    color: #A3A3A3;
+  &__description {
+    margin-left: 20px;
+    &_type {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 1px;
+      color: #A3A3A3;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    &_title {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+      text-align: left;
+      margin: 5px 0 15px;
+    }
   }
-  &__title {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-    text-align: left;
-  }
+
   &__price {
     text-align: center;
     &_value {
@@ -53,9 +69,11 @@
 .ProdSlider {
   display: flex;
   width: 260px;
-  margin-left: 10px;
+  padding: 0 10px;
   align-items: center;
   justify-content: space-between;
+  background: white;
+  transition: opacity 0.6s;
   &__button {
     width: 11px;
     height: 8px;
