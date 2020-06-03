@@ -1,8 +1,51 @@
 .ProductCard {
   display: flex;
   flex-direction: column;
+  width: 280px;
+  overflow: hidden;
+  align-items: center;
   &__image {
     width: 292px;
     height: 389px;
+  }
+}
+.ProdSlider {
+  display: flex;
+  //align-items: center;
+  //justify-content: space-between;
+  &__button {
+    width: 11px;
+    height: 8px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+    &_left {
+      transform: rotate(-90deg);
+    }
+    &_right {
+      transform: rotate(90deg);
+    }
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    &_item {
+      height: 40px;
+      overflow: hidden;
+      cursor: pointer;
+      &-active {
+        border: 1px solid #000000;
+        box-sizing: border-box;
+      }
+      &-image {
+        width: 40px;
+      }
+    }
   }
 }
