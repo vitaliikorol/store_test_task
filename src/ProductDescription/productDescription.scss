@@ -1,3 +1,5 @@
+@import "src/Additional/mixins";
+
 .PD {
   display: flex;
   &__description {
@@ -5,8 +7,7 @@
     float: left;
 
     &_text {
-      font-family: Roboto, sans-serif;
-      font-style: normal;
+      @include main_font;
       font-weight: 300;
       font-size: 14px;
       line-height: 20px;
@@ -33,8 +34,7 @@
   }
 
   &__btn {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
+    @include main_font;
     font-weight: 300;
     font-size: 12px;
     line-height: 14px;
@@ -63,8 +63,7 @@
     }
 
     &_type {
-      font-family: Roboto, sans-serif;
-      font-style: normal;
+      @include main_font;
       font-weight: 500;
       font-size: 10px;
       line-height: 12px;
@@ -74,8 +73,7 @@
     }
 
     &_title {
-      font-family: Roboto, sans-serif;
-      font-style: normal;
+      @include main_font;
       font-weight: 500;
       font-size: 40px;
       line-height: 47px;
@@ -89,8 +87,7 @@
   overflow: hidden;
   &__buttons {
     height: 62px;
-    font-family: Roboto, sans-serif;
-    font-style: normal;
+    @include main_font;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -103,8 +100,17 @@
     box-sizing: border-box;
     background: none;
     cursor: pointer;
+
     &:focus {
       outline: none;
+    }
+
+    &:hover {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.0697115);
+    }
+
+    &:active {
+      box-shadow: 0 5px 5px #424242;
     }
 
     &_cart {
@@ -144,8 +150,7 @@
       padding: 0 15px;
       font-size: 14px;
       color: #000000;
-      font-family: Roboto, sans-serif;
-      font-style: normal;
+      @include main_font;
       font-weight: 300;
       letter-spacing: 0.666667px;
       cursor: pointer;
@@ -167,8 +172,7 @@
   margin: 0 0 9px 100px;
 
   &__prop {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
+    @include main_font;
     font-weight: 500;
     font-size: 10px;
     line-height: 12px;
@@ -179,8 +183,7 @@
   }
 
   &__value {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
+    @include main_font;
     font-weight: 500;
     font-size: 10px;
     line-height: 12px;

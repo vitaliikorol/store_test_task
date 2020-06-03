@@ -8,7 +8,7 @@ export const Cart = () => {
   const [showCart, setShowCart] = useState(false);
   const [cartGoods, setCartGoods] = useState([]);
   const goodsFromServer = useContext(ClothesFromServer);
-  const [total, setTotal] = useState(720);
+  const [total, setTotal] = useState(730);
   const handleShowCart = () => {
     setShowCart(prevState => !prevState)
   }

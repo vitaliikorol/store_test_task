@@ -1,3 +1,5 @@
+@import "src/Additional/mixins.scss";
+
 .CartItem {
   padding: 19px 30px 19px 39px;
   width: 340px;
@@ -15,8 +17,7 @@
   }
   &__specs {
     &_title {
-      font-family: Roboto, sans-serif;
-      font-style: normal;
+      @include main_font;
       font-weight: lighter;
       font-size: 12px;
       line-height: 14px;
@@ -25,8 +26,7 @@
     }
   }
   &__price {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
+    @include main_font;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
@@ -37,15 +37,13 @@
 }
 
 .counter {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
+  @include main_font;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: white;
   letter-spacing: 0.7px;
   &__button {
-    padding: 0;
     border: none;
     background: none;
     color: white;
