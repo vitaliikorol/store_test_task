@@ -2,6 +2,7 @@ export interface ClothItem {
   name: string,
   maker: string,
   price: number,
+  type: string,
   age: number,
   popularity: number,
   description: string,

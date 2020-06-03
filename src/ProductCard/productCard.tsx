@@ -9,19 +9,46 @@ type Params = {
 
 export const ProductCard: FC<Params> = ({item}) => {
   const [activeImage, setActiveImage] = useState(item.product_images[0])
+  const index = item.product_images.findIndex(el => el === activeImage)
 
   const handleActiveImage = (imgUrl: string) => {
     setActiveImage(imgUrl)
   }
 
+  const handlePrevButton = () => {
+    index === 0
+      ? setActiveImage(item.product_images[item.product_images.length - 1])
+      : setActiveImage(item.product_images[index - 1])
+  }
+
+  const handleNextButton = () => {
+    index + 1 === item.product_images.length
+      ? setActiveImage(item.product_images[0])
+      : setActiveImage(item.product_images[index + 1])
+  }
+
+  const defineTypeOfCloth = (type: string) => {
+    switch (type) {
+      case "Coats":
+        return 'Куртки';
+      case "Sneakers":
+        return 'Кроссовки';
+      case "Shirts":
+        return "Рубашки";
+      case "Trousers":
+        return "Брюки"
+    }
 
 
+  }
 
   return (
     <section className="ProductCard">
       <img src={activeImage} alt="" className="ProductCard__image"/>
       <div className="ProductCard__slider ProdSlider">
-        <button className="ProdSlider__button">
+        <button
+          onClick={handlePrevButton}
+          className="ProdSlider__button">
           <img src="https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/icons/up-arrow.png" alt="&larr;" className="ProdSlider__button ProdSlider__button_left"/>
         </button>
         <ul className="ProdSlider__list">
@@ -32,9 +59,17 @@ export const ProductCard: FC<Params> = ({item}) => {
             </li>
           ))}
         </ul>
-        <button className="ProdSlider__button">
+        <button
+          onClick={handleNextButton}
+          className="ProdSlider__button">
           <img src="https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/icons/up-arrow.png" alt="&larr;" className="ProdSlider__button ProdSlider__button_right"/>
         </button>
+      </div>
+      <p className="ProductCard__type">{defineTypeOfCloth(item.type)}</p>
+      <p className="ProductCard__title">{item.name}</p>
+      <div className="ProductCard__price">
+        <h1 className="ProductCard__price_value">{`$${item.price}`}</h1>
+        <p className="ProductCard__price_stock">{`на складе: ${item.left_in_stock}`}</p>
       </div>
     </section>
   )
