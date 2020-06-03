@@ -39,7 +39,7 @@ export const ProductCard: FC<Params> = ({item}) => {
   const defineTypeOfCloth = (type: string) => {
     switch (type) {
       case "Coats":
-        return 'Куртки';
+        return 'Плащи';
       case "Sneakers":
         return 'Кроссовки';
       case "Shirts":
