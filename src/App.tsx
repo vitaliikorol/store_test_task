@@ -1,10 +1,14 @@
 import React from 'react'
 import './App.scss';
 import {Header} from "./Header/header";
+import {SideBar} from "./SideBar/sideBar";
 
 const App = () => {
   return (
-    <Header />
+    <>
+      <Header/>
+      <SideBar />
+    </>
   )
 }
 
