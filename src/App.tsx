@@ -21,7 +21,7 @@ const App = () => {
       <Switch>
         <Route path="/" exact component={Main} />
         {clothes.map((item: ClothItem) => (
-          <Route key={item.article_no} path={`/${item.article_no}`} render={() => <ProductDescription />}/>
+          <Route key={item.article_no} path={`/${item.article_no}`} render={() => <ProductDescription item={item}/>}/>
         ))}
       </Switch>
     </>
