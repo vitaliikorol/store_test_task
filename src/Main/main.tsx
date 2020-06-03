@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, {useContext, useEffect, useMemo, useState} from "react";
 import './main.scss'
 import {SideBar} from "../SideBar/sideBar";
 import {ClothesFromServer} from "../Additional/api";
@@ -7,7 +7,6 @@ import {ProductCard} from "../ProductCard/productCard";
 
 export const Main = () => {
   const [clothes, setClothes] = useState([])
-  const [sortedClothes, setSortedClothes] = useState(clothes)
   const [activeView, setActiveView] = useState('All');
   const [viewSort, setViewSort] = useState(false);
   const goodsFromServer = useContext(ClothesFromServer);
@@ -20,21 +19,23 @@ export const Main = () => {
 
   }, [viewSort]);
 
-  useEffect(() => {
-    activeView === 'All'
-      ? setSortedClothes(clothes)
-      : setSortedClothes(clothes.filter((el: ClothItem) => el.type === activeView))
-  }, [activeView])
+
+  const sortedClothes = useMemo(() => {
+    return activeView === 'All'
+      ? clothes
+      : clothes.filter((el: ClothItem) => el.type === activeView)
+  }, [clothes, activeView])
 
 
-  const defineClothes = () => {
-    switch (activeView) {
-      case 'All':
-        return clothes;
-      default:
-        return sortedClothes;
-    }
-  }
+  //
+  // const defineClothes = () => {
+  //   switch (activeView) {
+  //     case 'All':
+  //       return clothes;
+  //     default:
+  //       return sortedClothes;
+  //   }
+  // }
 
 
   return (
@@ -45,7 +46,7 @@ export const Main = () => {
                 setViewSort={setViewSort}
     />
     <div className="Main__catalog">
-      {defineClothes().map((el: ClothItem) => (
+      {sortedClothes.map((el: ClothItem) => (
         <ProductCard item={el} key={el.name}/>
       ))}
     </div>
