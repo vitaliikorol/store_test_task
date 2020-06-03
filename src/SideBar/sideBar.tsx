@@ -30,7 +30,6 @@ export const SideBar: FC<Params> = ({
 
   const handleSort = (value: string) => {
     setSortType(value);
-    console.log(value)
   }
 
   return (

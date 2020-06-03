@@ -1,25 +1,46 @@
-import React, {useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import './cart.scss'
+import {ClothesFromServer} from "../Additional/api";
+import {ClothItem} from "../Additional/Interfaces";
+import {CartItem} from "./CartItem/cartItem";
 
 export const Cart = () => {
   const [showCart, setShowCart] = useState(false);
-
+  const [cartGoods, setCartGoods] = useState([]);
+  const goodsFromServer = useContext(ClothesFromServer);
+  const [total, setTotal] = useState(720);
   const handleShowCart = () => {
     setShowCart(prevState => !prevState)
   }
+
+  useEffect(() => {
+    goodsFromServer.then(data => data.filter((el: ClothItem) => el.popularity % 2)).then(data => setCartGoods(data))
+  }, [goodsFromServer])
 
 
   return (
     <>
       <button type="button" className="Cart" onClick={handleShowCart}>
-        <img src="https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/icons/cart.png" alt="cart" className="Cart__logo"/>
-        <span className="Cart__quantity">1</span>
+        <img src="https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/icons/cart.png"
+             alt="cart" className="Cart__logo"/>
+        <span className="Cart__quantity">{cartGoods.length}</span>
       </button>
       <aside className="Cart__body" style={{top: showCart ? "0" : "-100vh"}}>
         <div className="Cart__body_close cbc">
           <button type="button" onClick={handleShowCart} className="cbc__button">
-            <img src="https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/icons/close.png" alt="close" className="cbc__button_img"/>
+            <img
+              src="https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/icons/close.png"
+              alt="close" className="cbc__button_img"/>
           </button>
+        </div>
+        <div className="Cart__body_goods">
+          {cartGoods.map((item: ClothItem) => (
+            <CartItem total={total} setTotal={setTotal} cloth={item} key={item.article_no}/>
+          ))}
+        </div>
+        <div className="Cart__body_total">
+          <p>Итого</p>
+          <p>{`$${total}`}</p>
         </div>
         <button type="button" className="Cart__body_buy">Купить</button>
       </aside>
