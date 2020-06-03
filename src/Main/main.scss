@@ -1,0 +1,13 @@
+.Main {
+  display: flex;
+  &__catalog {
+    display: flex;
+    flex-wrap: wrap;
+    &_asd {
+      width: 250px;
+      height: 200px;
+      background-color: pink;
+      display: inline-block;
+    }
+  }
+}

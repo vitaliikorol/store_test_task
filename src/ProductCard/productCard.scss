@@ -1,0 +1,8 @@
+.ProductCard {
+  display: flex;
+  flex-direction: column;
+  &__image {
+    width: 292px;
+    height: 389px;
+  }
+}

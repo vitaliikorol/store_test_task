@@ -3,6 +3,8 @@
   border: none;
   background: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
   &:focus {
     outline: none;
   }

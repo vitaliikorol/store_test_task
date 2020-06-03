@@ -1,14 +1,26 @@
-import React, {useState} from "react";
+import React, {FC, useState} from "react";
 import './sidebar.scss'
 
-export const SideBar = () => {
-  const [activeView, setActiveView] = useState('All');
-  const [viewSort, setViewSort] = useState(false);
+type Params = {
+  activeView: string;
+  setActiveView: (value: string) => void;
+  viewSort: boolean;
+  setViewSort: (value: boolean) => void;
+}
+
+export const SideBar: FC<Params> = ({
+                                      activeView,
+                                      setActiveView,
+                                      viewSort,
+                                      setViewSort,
+                                    }) => {
+  const [view, setView] = useState(true)
   const handleActiveView = (target: string) => {
     setActiveView(target)
   }
   const handleViewSort = () => {
-    setViewSort(prevState => !prevState)
+    setView(prevState => !prevState);
+    setViewSort(view);
   }
 
   return (
@@ -30,9 +42,9 @@ export const SideBar = () => {
             onClick={() => handleActiveView('Trousers')}>Брюки
         </li>
       </ul>
-      <button className="SideBar__sort" onClick={handleViewSort}>Сортировать <img src="images/icons/up-arrow.png" alt="&uarr;" style={{transform: viewSort ? 'rotate(180deg)' : ''}} className="SideBar__sort_img"/></button>
+      <button className="SideBar__sort" onClick={handleViewSort}>Сортировать <img src="https://raw.githubusercontent.com/vitaliikorol/store_test_task/master/public/images/icons/up-arrow.png" alt="&uarr;" style={{transform: viewSort ? 'rotate(180deg)' : ''}} className="SideBar__sort_img"/></button>
       <div className="SideBar__sort_wrapper">
-        <ul className="SideBar__list SideBar__sort_list" style={{top: viewSort ? '0' : '-175px'}}>
+        <ul className="SideBar__list SideBar__sort_list" style={{top: viewSort ? '0' : '-190px'}}>
           <li className="SideBar__list_item SideBar__sort_list-item">От дорогих к дешевым</li>
           <li className="SideBar__list_item SideBar__sort_list-item">От дешевых к дорогим</li>
           <li className="SideBar__list_item SideBar__sort_list-item">Популярные</li>

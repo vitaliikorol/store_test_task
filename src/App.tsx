@@ -1,18 +1,15 @@
 import React from 'react'
 import './App.scss';
 import {Header} from "./Header/header";
-import {SideBar} from "./SideBar/sideBar";
+import {Main} from "./Main/main";
 
 const App = () => {
   return (
     <>
       <Header/>
-      <SideBar />
+      <Main />
     </>
   )
 }
 
 export default App;
-
-//---todo --- images tested path
-// <img src="images/jacket_shirt/jacket_shirt_01.jpg" alt="jacket"/>
