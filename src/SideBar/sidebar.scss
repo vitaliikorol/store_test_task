@@ -39,6 +39,8 @@
     }
     &_img {
       transition: transform 0.6s;
+      width: 12px;
+      height: 6px;
     }
     &_wrapper {
       overflow: hidden;
