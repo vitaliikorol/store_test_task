@@ -59,12 +59,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@mate-academy/eslint-config-react-typescript": "*",
-    "eslint": "^7.1.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
-  }
+  "devDependencies": {}
 }
