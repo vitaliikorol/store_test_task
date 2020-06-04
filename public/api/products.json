@@ -69,9 +69,6 @@
     "care": "",
     "article_no": "F97415",
     "sizes": [
-      36,
-      37,
-      38,
       39,
       40,
       41,
@@ -127,13 +124,10 @@
     "care": "",
     "article_no": "HHE41861",
     "sizes": [
-      36,
-      37,
       38,
       39,
       40,
-      41,
-      42
+      41
     ],
     "product_images": [
       "https://vitaliikorol.github.io/store_test_task/images/sneakers_with_fastener/sneakers_with_fastener_01.jpg",
@@ -157,7 +151,6 @@
     "care": "Сухая чистка",
     "article_no": "JSMQ311331MQ441000",
     "sizes": [
-      44,
       46,
       48,
       50,

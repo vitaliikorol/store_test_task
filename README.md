@@ -1,24 +1,9 @@
-Design: https://invis.io/3BSMR72JK9A#/370062208_Main
+[DEMO LINK](https://vitaliikorol.github.io/store_test_task/)
 
-Design Figma: https://www.figma.com/file/fUa87CFCTw4swXLPMmu3TJ/Test-front-end-shop?node-id=0%3A2
+Developed by Vitalii Korol
+https://github.com/vitaliikorol
 
-Необходимо сверстать одну страницу интернет-магазина.
-
-Description:
-
-Страница списка товаров: https://projects.invisionapp.com/share/3BSMR72JK9A#/screens/370062208
-
-Содержит меню в сайдбаре, селектор выбора сортировки, список товаров, корзину. Элемент товара при наведении содержит небольшой слайдер, при клике на картинки которого, меняется картинка в блоке товара. Блок товара должен быть весь кликабельный и вести на продуктовую страницу (страницу, что в дизайне, делать не нужно, сделайте просто заглушку).
-
-Требования:
-
-Адаптив - по желанию, но, думаю, не стоит на него тратить время;
-Можете сверстать только первую страницу, если посчитаете, что верстка всех страниц займет много времени;
-Это должно быть SPA (Single page application);
-Верстка должна быть семантичной (используйте где нужно теги main, aside, article, section и т.д.);
-Используйте CSS-препроцессор SASS(SCSS), LESS, Stylus (на ваш выбор);
-Нельзя использовать сетки bootstrap, foundation, ui kit. Flexbox и CSS Grid можно;
-Желательно использовать методологию BEM;
-JS-фреймворк на ваше усмотрение. Хотелось бы видеть реализацию на Angular, но React, Preact, Vue тоже подойдет;
-Реализация управления состоянием приложения через redux, ngrx/ngxs;
-Модель данных объектов товара - на ваше усмотрение.
+Contacts:
++380938818000 (Viber / WhatsApp / Telegram / FaceTime)
+vitalii.korol@aol.co.uk
+vitalii.korol.addl@gmail.com

@@ -47,12 +47,7 @@
       box-sizing: border-box;
       display: flex;
       justify-content: space-between;
-      @include main_font;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 19px;
-      letter-spacing: 0.8px;
-      color: #FFFFFF;
+      @include cart_total;
     }
     &_goods {
       display: flex;
@@ -63,10 +58,7 @@
       bottom: 0;
       border: 2px solid white;
       box-sizing: border-box;
-      @include main_font;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 19px;
+      @include cart_total;
       text-align: center;
       letter-spacing: 2px;
       color: white;

@@ -3,6 +3,8 @@ import {NavLink} from 'react-router-dom'
 import './productCard.scss'
 import {ClothItem} from "../Additional/Interfaces";
 import cn from 'classnames';
+import {defineTypeOfCloth} from "../Additional/multipurposeFuncs";
+import {up_arrowIcon} from "../Additional/api";
 
 type Params = {
   item: ClothItem,
@@ -37,19 +39,6 @@ export const ProductCard: FC<Params> = ({item}) => {
     setSliderVisible(false)
   }
 
-  const defineTypeOfCloth = (type: string) => {
-    switch (type) {
-      case "Coats":
-        return 'Плащи';
-      case "Sneakers":
-        return 'Кроссовки';
-      case "Shirts":
-        return "Рубашки";
-      case "Trousers":
-        return "Брюки"
-    }
-  }
-
   return (
     <section
       className="ProductCard"
@@ -57,7 +46,11 @@ export const ProductCard: FC<Params> = ({item}) => {
       onMouseLeave={defineMouseLeave}
     >
       <NavLink to={`/${item.article_no}`}>
-        <img src={activeImage} alt={activeImage} className="ProductCard__image"/>
+        <img
+          src={activeImage}
+          alt={activeImage}
+          className="ProductCard__image"
+        />
       </NavLink>
       <div className="ProductCard__wrapper">
         <div
@@ -67,15 +60,20 @@ export const ProductCard: FC<Params> = ({item}) => {
             onClick={handlePrevButton}
             className="ProdSlider__button">
             <img
-              src="https://vitaliikorol.github.io/store_test_task/images/icons/up-arrow.png"
-              alt="&larr;" className="ProdSlider__button ProdSlider__button_left"/>
+              src={up_arrowIcon}
+              alt="&larr;"
+              className="ProdSlider__button ProdSlider__button_left"
+            />
           </button>
           <ul className="ProdSlider__list">
             {item.product_images.map(img => (
               <li
                 key={img}
-                className={cn(activeImage === img ? 'ProdSlider__list_item ProdSlider__list_item-active' : 'ProdSlider__list_item')}
-                onClick={() => handleActiveImage(img)}>
+                className={cn(activeImage === img
+                  ? 'ProdSlider__list_item ProdSlider__list_item-active'
+                  : 'ProdSlider__list_item')}
+                onClick={() => handleActiveImage(img)}
+              >
                 <img src={img} alt="" className="ProdSlider__list_item-image"/>
               </li>
             ))}
@@ -84,17 +82,26 @@ export const ProductCard: FC<Params> = ({item}) => {
             onClick={handleNextButton}
             className="ProdSlider__button">
             <img
-              src="https://vitaliikorol.github.io/store_test_task/images/icons/up-arrow.png"
-              alt="&larr;" className="ProdSlider__button ProdSlider__button_right"/>
+              src={up_arrowIcon}
+              alt="&larr;"
+              className="ProdSlider__button ProdSlider__button_right"/>
           </button>
         </div>
         <div className="ProductCard__description">
-          <p className="ProductCard__description_type">{defineTypeOfCloth(item.type)}</p>
+          <p
+            className="ProductCard__description_type"
+          >
+            {defineTypeOfCloth(item.type)}
+          </p>
           <p className="ProductCard__description_title">{item.name}</p>
         </div>
         <div className="ProductCard__price">
           <h1 className="ProductCard__price_value">{`$${item.price}`}</h1>
-          <p className="ProductCard__price_stock">{`на складе: ${item.left_in_stock}`}</p>
+          <p
+            className="ProductCard__price_stock"
+          >
+            {`на складе: ${item.left_in_stock}`}
+          </p>
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 import React, {FC, useState} from "react";
 import './sidebar.scss';
 import cn from 'classnames';
+import {up_arrowIcon} from "../Additional/api";
 
 type Params = {
   activeView: string;
@@ -74,7 +75,7 @@ export const SideBar: FC<Params> = ({
       <button className="SideBar__sort" onClick={handleViewSort}>
         Сортировать
         <img
-        src="https://vitaliikorol.github.io/store_test_task/images/icons/up-arrow.png"
+        src={up_arrowIcon}
         alt="&uarr;"
         style={{transform: viewSort ? '' : 'rotate(180deg)'}}
         className="SideBar__sort_img"/>
@@ -86,31 +87,38 @@ export const SideBar: FC<Params> = ({
         >
           <li
             onClick={() => handleSort('Price_asc')}
-            className={cn(sortType === 'Price_asc' ? "SideBar__sort_list-item SideBar__sort_list-item-active" : "SideBar__sort_list-item")}
+            className={cn(sortType === 'Price_asc'
+              ? "SideBar__sort_list-item SideBar__sort_list-item-active"
+              : "SideBar__sort_list-item")}
           >
             От дорогих к дешевым
           </li>
           <li
             onClick={() => handleSort('Price_desc')}
-            className={cn(sortType === 'Price_desc' ? "SideBar__sort_list-item SideBar__sort_list-item-active" : "SideBar__sort_list-item")}
+            className={cn(sortType === 'Price_desc'
+              ? "SideBar__sort_list-item SideBar__sort_list-item-active"
+              : "SideBar__sort_list-item")}
           >
             От дешевых к дорогим
           </li>
           <li
             onClick={() => handleSort('Popularity')}
-            className={cn(sortType === 'Popularity' ? "SideBar__sort_list-item SideBar__sort_list-item-active" : "SideBar__sort_list-item")}
+            className={cn(sortType === 'Popularity'
+              ? "SideBar__sort_list-item SideBar__sort_list-item-active"
+              : "SideBar__sort_list-item")}
           >
             Популярные
           </li>
           <li
             onClick={() => handleSort('Newest')}
-            className={cn(sortType === 'Newest' ? "SideBar__sort_list-item SideBar__sort_list-item-active" : "SideBar__sort_list-item")}
+            className={cn(sortType === 'Newest'
+              ? "SideBar__sort_list-item SideBar__sort_list-item-active"
+              : "SideBar__sort_list-item")}
           >
             Новые
           </li>
         </ul>
       </div>
     </aside>
-
   )
 }
