@@ -1,4 +1,5 @@
 import React, { FC, useState } from 'react';
+import {useHistory} from 'react-router-dom';
 import cn from 'classnames';
 import { ClothItem } from '../Additional/Interfaces';
 import './productDescription.scss';
@@ -12,6 +13,12 @@ type Params = {
 export const ProductDescription: FC<Params> = ({ item }) => {
   const [sliderVisible, setSliderVisible] = useState(false);
   const [size, setSize] = useState(0);
+  const history = useHistory();
+
+  const defineBackMove = () => {
+    history.goBack()
+  }
+
 
   const defineSliderVisible = () => {
     setSliderVisible(prevState => !prevState);
@@ -43,6 +50,7 @@ export const ProductDescription: FC<Params> = ({ item }) => {
         <button
           type="button"
           className="PD__main_button-back PD__btn"
+          onClick={defineBackMove}
         >
           <img
             className="PD__btn_img"
