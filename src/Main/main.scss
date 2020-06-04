@@ -2,6 +2,7 @@
   display: flex;
   padding-bottom: 102px;
   &__catalog {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

@@ -1,25 +1,34 @@
-import React, {FC, useState} from "react";
-import {ClothItem} from "../Additional/Interfaces";
+import React, { FC, useState } from 'react';
 import cn from 'classnames';
-import './productDescription.scss'
-import {defineTypeOfCloth} from "../Additional/multipurposeFuncs";
-import {up_arrowIcon} from "../Additional/api";
+import { ClothItem } from '../Additional/Interfaces';
+import './productDescription.scss';
+import { defineTypeOfCloth } from '../Additional/multipurposeFuncs';
+import { upArrowIcon } from '../Additional/api';
 
 type Params = {
   item: ClothItem;
-}
+};
 
-export const ProductDescription: FC<Params> = ({item}) => {
+export const ProductDescription: FC<Params> = ({ item }) => {
   const [sliderVisible, setSliderVisible] = useState(false);
   const [size, setSize] = useState(0);
 
   const defineSliderVisible = () => {
-    setSliderVisible(prevState => !prevState)
-  }
+    setSliderVisible(prevState => !prevState);
+  };
 
-  const defineSize = (size: number) => {
-    setSize(size)
-  }
+  const defineSize = (value: number) => {
+    setSize(value);
+  };
+
+  const defineKeyDown = (
+    event: React.KeyboardEvent<HTMLLIElement>,
+    el: number,
+  ) => {
+    if (event.keyCode === 83) {
+      defineSize(el);
+    }
+  };
 
   return (
     <div className="ProductDescription PD">
@@ -31,11 +40,15 @@ export const ProductDescription: FC<Params> = ({item}) => {
         />
       </aside>
       <main className="PD__main">
-        <button className="PD__main_button-back PD__btn">
+        <button
+          type="button"
+          className="PD__main_button-back PD__btn"
+        >
           <img
             className="PD__btn_img"
-            src={up_arrowIcon}
-            alt="&larr;"/>
+            src={upArrowIcon}
+            alt="&larr;"
+          />
           НАЗАД
         </button>
         <p className="PD__main_type">{defineTypeOfCloth(item.type)}</p>
@@ -44,24 +57,30 @@ export const ProductDescription: FC<Params> = ({item}) => {
           <div className="PD__main_buttons_list-wrapper PDL">
 
             <button
+              type="button"
               className="PDL__buttons"
               onClick={defineSliderVisible}
             >
               РАЗМЕР
-              <img className="PDL__buttons_img"
-                   src={up_arrowIcon}
-                   alt="&larr;"
+              <img
+                className="PDL__buttons_img"
+                src={upArrowIcon}
+                alt="&larr;"
               />
             </button>
             <div className="PDL__buttons_list-wrapper">
-              <ul className="PDL__buttons_list"
-                  style={{top: sliderVisible
-                      ? '0'
-                      : `-${item.product_images.length * 30}px`}}
+              <ul
+                className="PDL__buttons_list"
+                style={{
+                  top: sliderVisible
+                    ? '0'
+                    : `-${item.product_images.length * 30}px`,
+                }}
               >
                 {item.sizes.map(el => (
                   <li
                     onClick={() => defineSize(el)}
+                    onKeyDown={(event) => defineKeyDown(event, el)}
                     key={el}
                     className={cn(size === el
                       ? 'PDL__buttons_item PDL__buttons_item-active'
@@ -109,5 +128,5 @@ export const ProductDescription: FC<Params> = ({item}) => {
         </div>
       </main>
     </div>
-  )
-}
+  );
+};

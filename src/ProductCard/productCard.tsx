@@ -1,43 +1,52 @@
-import React, {FC, useState} from "react";
-import {NavLink} from 'react-router-dom'
-import './productCard.scss'
-import {ClothItem} from "../Additional/Interfaces";
+import React, { FC, useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import './productCard.scss';
 import cn from 'classnames';
-import {defineTypeOfCloth} from "../Additional/multipurposeFuncs";
-import {up_arrowIcon} from "../Additional/api";
+import { ClothItem } from '../Additional/Interfaces';
+import { defineTypeOfCloth } from '../Additional/multipurposeFuncs';
+import { upArrowIcon } from '../Additional/api';
 
 type Params = {
-  item: ClothItem,
-}
+  item: ClothItem;
+};
 
-export const ProductCard: FC<Params> = ({item}) => {
-  const [activeImage, setActiveImage] = useState(item.product_images[0])
-  const [sliderVisible, setSliderVisible] = useState(false)
-  const index = item.product_images.findIndex(el => el === activeImage)
+export const ProductCard: FC<Params> = ({ item }) => {
+  const [activeImage, setActiveImage] = useState(item.product_images[0]);
+  const [sliderVisible, setSliderVisible] = useState(false);
+  const index = item.product_images.findIndex(el => el === activeImage);
 
   const handleActiveImage = (imgUrl: string) => {
-    setActiveImage(imgUrl)
-  }
+    setActiveImage(imgUrl);
+  };
 
-  const handlePrevButton = () => {
+  const handleKeyDown = (
+    event: React.KeyboardEvent<HTMLLIElement>,
+    img: string,
+  ) => {
+    if (event.keyCode === 73) {
+      handleActiveImage(img);
+    }
+  };
+
+  const handlePrevButton = () => (
     index === 0
       ? setActiveImage(item.product_images[item.product_images.length - 1])
       : setActiveImage(item.product_images[index - 1])
-  }
+  );
 
-  const handleNextButton = () => {
+  const handleNextButton = () => (
     index + 1 === item.product_images.length
       ? setActiveImage(item.product_images[0])
       : setActiveImage(item.product_images[index + 1])
-  }
+  );
 
   const defineMouseEnter = () => {
-    setSliderVisible(true)
-  }
+    setSliderVisible(true);
+  };
 
   const defineMouseLeave = () => {
-    setSliderVisible(false)
-  }
+    setSliderVisible(false);
+  };
 
   return (
     <section
@@ -55,12 +64,15 @@ export const ProductCard: FC<Params> = ({item}) => {
       <div className="ProductCard__wrapper">
         <div
           className="ProductCard__slider ProdSlider"
-        style={{opacity: sliderVisible ? '100%' : '0%'}}>
+          style={{ opacity: sliderVisible ? '100%' : '0%' }}
+        >
           <button
+            type="button"
             onClick={handlePrevButton}
-            className="ProdSlider__button">
+            className="ProdSlider__button"
+          >
             <img
-              src={up_arrowIcon}
+              src={upArrowIcon}
               alt="&larr;"
               className="ProdSlider__button ProdSlider__button_left"
             />
@@ -73,18 +85,22 @@ export const ProductCard: FC<Params> = ({item}) => {
                   ? 'ProdSlider__list_item ProdSlider__list_item-active'
                   : 'ProdSlider__list_item')}
                 onClick={() => handleActiveImage(img)}
+                onKeyDown={(event) => handleKeyDown(event, img)}
               >
-                <img src={img} alt="" className="ProdSlider__list_item-image"/>
+                <img src={img} alt="" className="ProdSlider__list_item-image" />
               </li>
             ))}
           </ul>
           <button
+            type="button"
             onClick={handleNextButton}
-            className="ProdSlider__button">
+            className="ProdSlider__button"
+          >
             <img
-              src={up_arrowIcon}
+              src={upArrowIcon}
               alt="&larr;"
-              className="ProdSlider__button ProdSlider__button_right"/>
+              className="ProdSlider__button ProdSlider__button_right"
+            />
           </button>
         </div>
         <div className="ProductCard__description">
@@ -105,5 +121,5 @@ export const ProductCard: FC<Params> = ({item}) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

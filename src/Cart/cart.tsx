@@ -1,8 +1,8 @@
-import React, {useContext, useEffect, useState} from "react";
-import './cart.scss'
-import {cartIcon, closeIcon, ClothesFromServer} from "../Additional/api";
-import {ClothItem} from "../Additional/Interfaces";
-import {CartItem} from "./CartItem/cartItem";
+import React, { useContext, useEffect, useState } from 'react';
+import './cart.scss';
+import { cartIcon, closeIcon, ClothesFromServer } from '../Additional/api';
+import { ClothItem } from '../Additional/Interfaces';
+import { CartItem } from './CartItem/cartItem';
 
 export const Cart = () => {
   const [showCart, setShowCart] = useState(false);
@@ -10,14 +10,14 @@ export const Cart = () => {
   const goodsFromServer = useContext(ClothesFromServer);
   const [total, setTotal] = useState(730);
   const handleShowCart = () => {
-    setShowCart(prevState => !prevState)
-  }
+    setShowCart(prevState => !prevState);
+  };
 
   useEffect(() => {
     goodsFromServer.then(data => data
       .filter((el: ClothItem) => el.popularity % 2))
-      .then(data => setCartGoods(data))
-  }, [goodsFromServer])
+      .then(data => setCartGoods(data));
+  }, [goodsFromServer]);
 
 
   return (
@@ -27,9 +27,10 @@ export const Cart = () => {
         className="Cart link-styling"
         onClick={handleShowCart}
       >
-        <img src={cartIcon}
-             alt="cart"
-             className="Cart__logo"
+        <img
+          src={cartIcon}
+          alt="cart"
+          className="Cart__logo"
         />
         <span className="Cart__quantity">
           {cartGoods.length}
@@ -37,7 +38,7 @@ export const Cart = () => {
       </button>
       <aside
         className="Cart__body"
-        style={{top: showCart ? "calc(50vh - 41px)" : "calc(-50vh - 41px)"}}
+        style={{ top: showCart ? 'calc(50vh - 41px)' : 'calc(-50vh - 41px)' }}
       >
         <div className="Cart__body_close cbc">
           <button
@@ -74,5 +75,5 @@ export const Cart = () => {
         </button>
       </aside>
     </>
-  )
-}
+  );
+};

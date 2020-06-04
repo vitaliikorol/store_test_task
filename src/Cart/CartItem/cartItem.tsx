@@ -1,32 +1,33 @@
-import React, {FC, useState} from "react";
-import './cartItem.scss'
-import {ClothItem} from "../../Additional/Interfaces";
+import React, { FC, useState } from 'react';
+import './cartItem.scss';
+import { ClothItem } from '../../Additional/Interfaces';
 
 type Params = {
   cloth: ClothItem;
   setTotal: (value: number) => void;
   total: number;
-}
+};
 
-export const CartItem:FC<Params> = ({
-                                      cloth,
-                                      setTotal,
-                                      total}) => {
+export const CartItem: FC<Params> = ({
+  cloth,
+  setTotal,
+  total,
+}) => {
   const [count, setCount] = useState(1);
 
   const handleMinusButton = () => {
-    setCount(prevState => prevState === 0
-      ? prevState :
-      prevState - 1)
-    setTotal(total - cloth.price)
-  }
+    setCount(prevState => (prevState === 0
+      ? prevState
+      : prevState - 1));
+    setTotal(total - cloth.price);
+  };
 
   const handlePlusButton = () => {
-    setCount(prevState => prevState < cloth.left_in_stock
+    setCount(prevState => (prevState < cloth.left_in_stock
       ? prevState + 1
-      : prevState);
-    setTotal(total + cloth.price)
-  }
+      : prevState));
+    setTotal(total + cloth.price);
+  };
 
 
   return (
@@ -37,7 +38,8 @@ export const CartItem:FC<Params> = ({
         <img
           src={cloth.product_images[1]}
           alt={cloth.name}
-          className="CartItem__image"/>
+          className="CartItem__image"
+        />
       </div>
       <div className="CartItem__specs">
         <p className="CartItem__specs_title">{cloth.name}</p>
@@ -61,7 +63,7 @@ export const CartItem:FC<Params> = ({
           </button>
         </div>
       </div>
-      <p className="CartItem__price">{`$${cloth.price*count}`}</p>
+      <p className="CartItem__price">{`$${cloth.price * count}`}</p>
     </div>
-  )
-}
+  );
+};
